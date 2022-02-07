@@ -87,3 +87,4 @@ Agile Software Development, Technical Teaching
 - [riakv](https://github.com/arindas/riakv): An append only key value store, with checksum based record validation.
   Originally inspired from the Rust In Action Book by Tim McNamara with enhancements for reading from in memory buffers,
   serializing and storing the index to disk, futher application of DRY principles and comphrehensive tests.
+
