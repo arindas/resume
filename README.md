@@ -33,6 +33,7 @@ Agile Software Development, Technical Teaching
   We were able to reduce turn around time for a new disease prediction service deployment by 10x and increase, along
   with improved audit records of all predicted reports.
   
+
 - Solution Architect, DeepWrex Technologies (04/2018 - 06/2020)
   ### Responsibilities
   - Architect cloud based solutions for machine learning software services.
@@ -45,10 +46,12 @@ Agile Software Development, Technical Teaching
   - A scalable black and white image colorization system, deployed using "Pytorch Serve" and FastAPI on AWS. We 
   implemented the instance aware image colorization paper.
 
+
 - Satellite Onboard Computer RTOS Research Student, KIITSAT
   - Developed a shell capable of spawning programs and organizing pipes
   - Developed a minimal kernel for armv6 (on Raspberry Pi 3) with basic memory management and TTL based I/O Support
   - Trained fellow team members on OS concepts
+
 
 - VR 3d Game Development Instructor, CampK12 (03/2020 - 06/2020)
   ### Responsibilities 
@@ -67,15 +70,19 @@ Agile Software Development, Technical Teaching
 - ISC, Higher Secondary
   Don Bosco Bandel, 2005 - 2017
 
+
 ## Side Projects
 - [sangfroid](https://github.com/arindas/sangfroid): A load balanced thread pool implemented in Rust using only the 
   standard library. Worker threads are managed with binary heap and are prioritized by the number of pending jobs.
 
+
 - [quartz](https://github.com/arindas/quartz): A shared memory parallelized ray tracer using OpenMP.
   _Speciality:_ Non recursive. Traditionally ray tracers are tail recursive. Image formats supported: PPM
 
+
 - [mac-on-linux-with-qemu](https://github.com/arindas/mac-on-linux-with-qemu): Runs MacOS on Linux with the QEMU
   KVM Hypervisor with some python utility scripts for downloading the disk images and shell scripts for starting QEMU.
+
 
 - [riakv](https://github.com/arindas/riakv): An append only key value store, with checksum based record validation.
   Originally inspired from the Rust In Action Book by Tim McNamara with enhancements for reading from in memory buffers,
