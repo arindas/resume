@@ -17,10 +17,10 @@ Agile Software Development, Technical Teaching
 
 ## Experience
 - Full Stack Engineer, Medical Imaging AI Services, Claritas Healthtech Pte. Ltd. (06/2020 - Present)
-  ### Responsibilities:
+  <u>Responsibilities</u>:
   - Developing distributed deep learning inference services and corressponding client web applications 
   - Deploying and maintaining said applications on the Google Cloud Platform
-  ### Projects
+  <u>Projects</u>
   - File storage solution built on top of Google Cloud Storage with additional support for bucket creation and user 
   access authorization at the level of buckets. Implemented as a golang webservice with the golang gooogle-cloud-sdk,
   along with a frontend React client application. Authentication: Firebase Auth. DB: Google Cloud Firestore.
@@ -35,11 +35,11 @@ Agile Software Development, Technical Teaching
   
 
 - Solution Architect, DeepWrex Technologies (04/2018 - 06/2020)
-  ### Responsibilities
+  <u>Responsibilities</u>
   - Architect cloud based solutions for machine learning software services.
   - Assist researchers in implementing deep learning research papers.
   - Iterating from research PoC to production.
-  ### Projects 
+  <u>Projects</u>
   - A real time named entity recognition system for medical reports. This was an in house, economic alternative to
   AWS Medical Comprehend, which didn't exist at the time. This was implemented as suite of C++ microservices, with
   intermediate data storage on AWS S3. These services talked to each other with Kafka (using rdkafka)
@@ -54,7 +54,7 @@ Agile Software Development, Technical Teaching
 
 
 - VR 3d Game Development Instructor, CampK12 (03/2020 - 06/2020)
-  ### Responsibilities 
+  <u>Responsibilities</u>
   - Teaching K12 students about game development which entailed:
     - Problem Solving skills
     - Basic Programming using Javascript
