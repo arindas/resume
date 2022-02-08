@@ -1,7 +1,9 @@
 # resume
 [![export](https://github.com/arindas/resume/actions/workflows/export.yml/badge.svg)](https://github.com/arindas/resume/actions/workflows/export.yml)
+[![.github/workflows/release.yml](https://github.com/arindas/resume/actions/workflows/release.yml/badge.svg)](https://github.com/arindas/resume/actions/workflows/release.yml)
 
 My [resume](./arindas-resume.md) in markdown format.
+Download PDF [here](https://github.com/arindas/resume/releases/latest/download/arindas-resume.pdf).
 
 ## Export to PDF
 Using https://github.com/simonhaenisch/md-to-pdf
