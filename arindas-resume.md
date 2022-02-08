@@ -41,8 +41,8 @@ Agile Software Development, Problem Solving, System Design, Technical Content De
   This solution enabled us to receive sensitive data from different medical institutions without providing access to our GCP infrastructure. 
   - Distributed deep-learning based diagnosis on medical images for a variety of diseases. Implemented as a suite of 
   microservices, in golang and python. We use golang for managing data and python for inference. The services talk 
-  to each other using Google Cloud PubSub.<br/>
-  Additionaly there's a React Dashboard for visualizing medical images, requesting diagnosis and viewing reports.
+  to each other using Google Cloud PubSub. Additionaly there's a React Dashboard for visualizing medical images,
+  requesting diagnosis and viewing reports. <br/>
   Authentication: Firebase Auth. DB: Google cloud firestore.<br/>
   We were able to reduce turnaround time for a new disease prediction service deployment by 10x, along
   with improved audit record keeping of all predicted reports.
