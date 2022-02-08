@@ -47,6 +47,8 @@ Agile Software Development, Problem Solving, System Design, Technical Content De
   We were able to reduce turnaround time for a new disease prediction service deployment by 10x, along
   with improved audit record keeping of all predicted reports.
 
+<br/>
+
 - <h3>Solution Architect, DeepWrex Technologies (04/2018 - 06/2020)</h3>
   
   <b>Responsibilities</b>
