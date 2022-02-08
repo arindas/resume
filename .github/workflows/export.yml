@@ -9,8 +9,9 @@ jobs:
   export-to-pdf:
     runs-on: ubuntu-latest
     steps:
-      - name: Build PDF
+      - name: Checkout Respository
         uses: actions/checkout@v2
+      - name: Export to pdf
         run: |
           npm i -g md-to-pdf
           md-to-pdf ./arindas-resume.md
