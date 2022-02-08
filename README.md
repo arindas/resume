@@ -23,7 +23,7 @@ Agile Software Development, Technical Teaching
   - Deploying and maintaining said applications on the Google Cloud Platform
   
   Projects:
- - File storage solution built on top of Google Cloud Storage with additional support for bucket creation and user 
+  - File storage solution built on top of Google Cloud Storage with additional support for bucket creation and user 
   access authorization at the level of buckets. Implemented as a golang web service with the golang google-cloud-sdk,
   along with a frontend React client application.<br>
   Authentication: Firebase Auth. DB: Google Cloud Firestore.<br>
