@@ -17,5 +17,6 @@ jobs:
           md-to-pdf ./arindas-resume.md
       - name: Archive PDF
         uses: actions/upload-artifact@v2
-        name: arindas-resume.pdf
-        path: ./arindas-resume.pdf
+        with:
+          name: arindas-resume
+          path: ./arindas-resume.pdf
