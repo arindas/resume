@@ -1,4 +1,5 @@
 # resume
+[![export](https://github.com/arindas/resume/actions/workflows/export.yml/badge.svg)](https://github.com/arindas/resume/actions/workflows/export.yml)
 
 My [resume](./arindas-resume.md) in markdown format.
 
@@ -11,5 +12,5 @@ npm i -g md-to-pdf
 md-to-pdf ./arindas-resume.md
 ```
 
-## LICENSE
+## License
 This repository is licensed under the MIT License. See [LICENSE](./LICENSE) for the full license text.
