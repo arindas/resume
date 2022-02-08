@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - arindas-resume.md
 
 jobs:
   export-to-pdf:
