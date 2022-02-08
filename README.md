@@ -11,5 +11,5 @@ npm i -g md-to-pdf
 md-to-pdf ./arindas-resume.md
 ```
 
-# LICENSE
+## LICENSE
 This repository is licensed under the MIT License. See [LICENSE](./LICENSE) for the full license text.
