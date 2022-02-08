@@ -3,8 +3,11 @@ stylesheet: https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/gi
 body_class: markdown-body
 css: |-
   .page-break { page-break-after: always; }
-  .markdown-body { font-size: 8px; font-family: monospace; }
+  .markdown-body { font-size: 11px; font-family: monospace; }
   .markdown-body pre > code { white-space: pre-wrap; }
+pdf_options:
+  format: a4
+  margin: 20mm 20mm 
 ---
 
 # Arindam Das
@@ -19,19 +22,20 @@ Generalist capable of architecting and implementing cloud-native software servic
 experience in medical imaging, real-time document processing and business inventory management.
 
 ## Technical Skills
-C, C++, Java, Golang, Rust, Python, Django, Tensorflow, Pytorch, Javascript, React, SQL, Postgres, Git, Docker, DevOps, MLOps, Linux, AWS, GCP, Firebase
+C, C++, Java, Golang, Rust, Python, Django, Tensorflow, Pytorch, Javascript, React, SQL, Postgres, 
+Git, Docker, DevOps, MLOps, Linux, AWS, GCP, Firebase
 
 ## Soft Skills
-Agile Software Development, Technical Teaching
+Agile Software Development, Problem Solving, System Design, Technical Content Delivery
 
 ## Experience
 - <h3>Full Stack Engineer, Medical Imaging AI Services, Claritas Healthtech Pte. Ltd. (06/2020 - Present)</h3>
   
-  Responsibilities:
+  <b>Responsibilities</b>
   - Developing distributed deep learning inference services and corresponding client web applications 
   - Deploying and maintaining said applications on the Google Cloud Platform
   
-  Projects:
+  <b>Projects</b>
   - File storage solution built on top of Google Cloud Storage with additional support for bucket creation and user 
   access authorization at the level of buckets. Implemented as a golang web service with the golang google-cloud-sdk,
   along with a frontend React client application.<br>
@@ -49,12 +53,12 @@ Agile Software Development, Technical Teaching
 
 - <h3>Solution Architect, DeepWrex Technologies (04/2018 - 06/2020)</h3>
   
-  Responsibilities:
+  <b>Responsibilities</b>
   - Architect cloud based solutions for machine learning software services.
   - Assist researchers in implementing deep learning research papers.
   - Iterating from research PoC to production.
   
-  Projects:
+  <b>Projects</b>
   - A real-time named entity recognition system for medical reports. This was an in house, economic alternative to
   AWS Medical Comprehend, which didn't exist at the time. This was implemented as a suite of C++ microservices, with
   intermediate data storage on AWS S3. These services talked to each other with Kafka (using rdkafka)
@@ -63,7 +67,7 @@ Agile Software Development, Technical Teaching
 
 <br>
 
-- <h3>Satellite Onboard Computer RTOS Research Student, KIITSAT</h3>
+- <h3>Satellite Onboard Computer RTOS Research Student, KIITSAT (04/2018 - 05/2019)</h3>
   - Developed a shell capable of spawning programs and organizing pipes
   - Developed a minimal kernel for armv6 (on Raspberry Pi 3) with basic memory management and TTL based I/O Support
   - Trained fellow team members on OS concepts
@@ -72,7 +76,7 @@ Agile Software Development, Technical Teaching
 
 - <h3>VR 3d Game Development Instructor, CampK12 (03/2020 - 06/2020)</h3>
   
-  Responsibilities:
+  <b>Responsibilities</b>
   - Teaching K12 students about game development which entailed:
     - Problem solving skills
     - Basic Programming using Javascript
@@ -82,12 +86,12 @@ Agile Software Development, Technical Teaching
   Some projects that I taught to students can be found at https://github.com/arindas-campk12
 
 ## Education
-- B.Tech in Computer Science and Engineering<br> 
+- <h3>B.Tech in Computer Science and Engineering</h3> 
   KIIT University, 06/2017 - 06/2021<br>
   CGPA: 9.44<br>
   SGPA 8th Semester: 9.69<br>
 
-- ISC, Higher Secondary<br>
+- <h3>ISC, Higher Secondary</h3>
   Don Bosco Bandel, 2005 - 2017<br>
 
 
