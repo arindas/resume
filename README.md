@@ -1,7 +1,16 @@
-**Arindam Das**
-- (+91) 98316 57983
-- Baidyabati, India
-- [github.com/arindas](https://github.com/arindas)
+---
+stylesheet: https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css
+body_class: markdown-body
+css: |-
+  .page-break { page-break-after: always; }
+  .markdown-body { font-size: 8px; font-family: monospace; }
+  .markdown-body pre > code { white-space: pre-wrap; }
+---
+
+# Arindam Das
+(+91) 98316 57983<br>
+Baidyabati, India<br>
+[github.com/arindas](https://github.com/arindas)
 
 ## Description
 Specializes in distributed systems, deep learning inference and AI SaaS at scale.
@@ -16,7 +25,7 @@ C, C++, Java, Golang, Rust, Python, Django, Tensorflow, Pytorch, Javascript, Rea
 Agile Software Development, Technical Teaching
 
 ## Experience
-- Full Stack Engineer, Medical Imaging AI Services, Claritas Healthtech Pte. Ltd. (06/2020 - Present)
+- <h3>Full Stack Engineer, Medical Imaging AI Services, Claritas Healthtech Pte. Ltd. (06/2020 - Present)</h3>
   
   Responsibilities:
   - Developing distributed deep learning inference services and corresponding client web applications 
@@ -38,7 +47,7 @@ Agile Software Development, Technical Teaching
 
 <br>
 
-- Solution Architect, DeepWrex Technologies (04/2018 - 06/2020)
+- <h3>Solution Architect, DeepWrex Technologies (04/2018 - 06/2020)</h3>
   
   Responsibilities:
   - Architect cloud based solutions for machine learning software services.
@@ -54,14 +63,14 @@ Agile Software Development, Technical Teaching
 
 <br>
 
-- Satellite Onboard Computer RTOS Research Student, KIITSAT
+- <h3>Satellite Onboard Computer RTOS Research Student, KIITSAT</h3>
   - Developed a shell capable of spawning programs and organizing pipes
   - Developed a minimal kernel for armv6 (on Raspberry Pi 3) with basic memory management and TTL based I/O Support
   - Trained fellow team members on OS concepts
 
 <br>
 
-- VR 3d Game Development Instructor, CampK12 (03/2020 - 06/2020)
+- <h3>VR 3d Game Development Instructor, CampK12 (03/2020 - 06/2020)</h3>
   
   Responsibilities:
   - Teaching K12 students about game development which entailed:
