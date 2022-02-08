@@ -23,11 +23,12 @@ Agile Software Development, Technical Teaching
   - Deploying and maintaining said applications on the Google Cloud Platform
   
   Projects:
-  - File storage solution built on top of Google Cloud Storage with additional support for bucket creation and user 
+ - File storage solution built on top of Google Cloud Storage with additional support for bucket creation and user 
   access authorization at the level of buckets. Implemented as a golang web service with the golang google-cloud-sdk,
-  along with a frontend React client application. Authentication: Firebase Auth. DB: Google Cloud Firestore.<br>
+  along with a frontend React client application.<br>
+  Authentication: Firebase Auth. DB: Google Cloud Firestore.<br>
   This solution enabled us to receive sensitive data from different medical institutions without providing access to  
-  our GCP infrastructure.
+  our GCP infrastructure. 
   - Distributed deep-learning based diagnosis on medical images for a variety of diseases. Implemented as a suite of 
   microservices, in golang and python. We use golang for managing data and python for inference. The services talk 
   to each other using Google Cloud PubSub.<br>
