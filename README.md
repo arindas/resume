@@ -11,9 +11,7 @@ pdf_options:
 ---
 
 # Arindam Das
-(+91) 98316 57983<br>
-Baidyabati, India<br>
-[github.com/arindas](https://github.com/arindas)
+(+91) 98316 57983 • dasarindam.mails@gmail.com • Baidyabati, India • [github.com/arindas](https://github.com/arindas)
 
 ## Description
 Specializes in distributed systems, deep learning inference and AI SaaS at scale.
@@ -38,18 +36,16 @@ Agile Software Development, Problem Solving, System Design, Technical Content De
   <b>Projects</b>
   - File storage solution built on top of Google Cloud Storage with additional support for bucket creation and user 
   access authorization at the level of buckets. Implemented as a golang web service with the golang google-cloud-sdk,
-  along with a frontend React client application.<br>
-  Authentication: Firebase Auth. DB: Google Cloud Firestore.<br>
-  This solution enabled us to receive sensitive data from different medical institutions without providing access to  
-  our GCP infrastructure. 
+  along with a frontend React client application.<br/>
+  Authentication: Firebase Auth. DB: Google Cloud Firestore.<br/>
+  This solution enabled us to receive sensitive data from different medical institutions without providing access to our GCP infrastructure. 
   - Distributed deep-learning based diagnosis on medical images for a variety of diseases. Implemented as a suite of 
   microservices, in golang and python. We use golang for managing data and python for inference. The services talk 
-  to each other using Google Cloud PubSub.<br>
-  Authentication: Firebase Auth. DB: Google cloud firestore.<br>
+  to each other using Google Cloud PubSub.<br/>
+  Additionaly there's a React Dashboard for visualizing medical images, requesting diagnosis and viewing reports.
+  Authentication: Firebase Auth. DB: Google cloud firestore.<br/>
   We were able to reduce turnaround time for a new disease prediction service deployment by 10x, along
   with improved audit record keeping of all predicted reports.
-
-<br>
 
 - <h3>Solution Architect, DeepWrex Technologies (04/2018 - 06/2020)</h3>
   
@@ -65,14 +61,11 @@ Agile Software Development, Problem Solving, System Design, Technical Content De
   - A scalable black and white image colourization system, deployed using "Pytorch Serve" and FastAPI on AWS. We 
   implemented the instance aware image colourization paper.
 
-<br>
-
 - <h3>Satellite Onboard Computer RTOS Research Student, KIITSAT (04/2018 - 05/2019)</h3>
+  
   - Developed a shell capable of spawning programs and organizing pipes
   - Developed a minimal kernel for armv6 (on Raspberry Pi 3) with basic memory management and TTL based I/O Support
   - Trained fellow team members on OS concepts
-
-<br>
 
 - <h3>VR 3d Game Development Instructor, CampK12 (03/2020 - 06/2020)</h3>
   
@@ -87,13 +80,7 @@ Agile Software Development, Problem Solving, System Design, Technical Content De
 
 ## Education
 - <h3>B.Tech in Computer Science and Engineering</h3> 
-  KIIT University, 06/2017 - 06/2021<br>
-  CGPA: 9.44<br>
-  SGPA 8th Semester: 9.69<br>
-
-- <h3>ISC, Higher Secondary</h3>
-  Don Bosco Bandel, 2005 - 2017<br>
-
+  KIIT University, 06/2017 - 06/2021 • CGPA: 9.44 • SGPA 8th Semester: 9.69
 
 ## Side Projects
 - [sangfroid](https://github.com/arindas/sangfroid): A load-balanced thread pool implemented in Rust using only the 
