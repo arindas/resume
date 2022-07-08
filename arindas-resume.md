@@ -71,6 +71,7 @@ Agile Software Development, Problem Solving, System Design, Technical Content De
   - Developed a minimal kernel for armv6 (on Raspberry Pi 3) with basic memory management and TTL based I/O Support
   - Trained fellow team members on OS concepts
 
+<!--
 - <h3>VR 3d Game Development Instructor, CampK12 (03/2020 - 06/2020)</h3>
   
   <b>Responsibilities</b>
@@ -81,7 +82,7 @@ Agile Software Development, Problem Solving, System Design, Technical Content De
     - _Patience and Perseverance_
   
   Some projects that I taught to students can be found at https://github.com/arindas-campk12
-
+-->
 ## Education
 - <h3>B.Tech in Computer Science and Engineering</h3> 
   KIIT University, 06/2017 - 06/2021 • CGPA: 9.44 • SGPA 8th Semester: 9.69
