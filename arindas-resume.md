@@ -20,12 +20,12 @@ Generalist capable of architecting and implementing cloud-native software servic
 experience in medical imaging, real-time document processing and business inventory management.
 
 ## Technical Skills
-Languages: C, C++, Java, Python, Golang, Rust, Javascript, SQL
-Frameworks and Libraries: Django, Tensorflow, Pytorch, React
-Tools: Git, Vim, Neovim, Awk, Sed
-DevOps: Linux, Docker, Bash, Zsh, Github Actions, Gitlab CI, Terraform
-Databases: Postgres, GCP Cloud Firestore, SQLite
-Cloud: AWS{S3, EC2, Lightsail}, Firebase, GCP{Instances, PubSub, Cloud Storage}, Azure{Instances}
+- __Languages__: C, C++, Java, Python, Golang, Rust, Javascript, SQL
+- __Frameworks and Libraries__: Django, Tensorflow, Pytorch, React
+- __Tools__: Git, Vim, Neovim, Awk, Sed
+- __DevOps__: Linux, Docker, Bash, Zsh, Github Actions, Gitlab CI, Terraform
+- __Databases__: Postgres, GCP Cloud Firestore, SQLite
+- __Cloud__: AWS{S3, EC2, Lightsail}, Firebase, GCP{Instances, PubSub, Cloud Storage}, Azure{Instances}
 
 ## Soft Skills
 Agile Software Development, Problem Solving, System Design, Technical Content Delivery
