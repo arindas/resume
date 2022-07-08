@@ -20,8 +20,12 @@ Generalist capable of architecting and implementing cloud-native software servic
 experience in medical imaging, real-time document processing and business inventory management.
 
 ## Technical Skills
-C, C++, Java, Golang, Rust, Python, Django, Tensorflow, Pytorch, Javascript, React, SQL, Postgres, 
-Git, Docker, DevOps, MLOps, Linux, AWS, GCP, Firebase
+Languages: C, C++, Java, Python, Golang, Rust, Javascript, SQL
+Frameworks and Libraries: Django, Tensorflow, Pytorch, React
+Tools: Git, Vim, Neovim, Awk, Sed
+DevOps: Linux, Docker, Bash, Zsh, Github Actions, Gitlab CI, Terraform
+Databases: Postgres, GCP Cloud Firestore, SQLite
+Cloud: AWS{S3, EC2, Lightsail}, Firebase, GCP{Instances, PubSub, Cloud Storage}, Azure{Instances}
 
 ## Soft Skills
 Agile Software Development, Problem Solving, System Design, Technical Content Delivery
@@ -37,13 +41,11 @@ Agile Software Development, Problem Solving, System Design, Technical Content De
   - File storage solution built on top of Google Cloud Storage with additional support for bucket creation and user 
   access authorization at the level of buckets. Implemented as a golang web service with the golang google-cloud-sdk,
   along with a frontend React client application.<br/>
-  Authentication: Firebase Auth. DB: Google Cloud Firestore.<br/>
   This solution enabled us to receive sensitive data from different medical institutions without providing access to our GCP infrastructure. 
   - Distributed deep-learning based diagnosis on medical images for a variety of diseases. Implemented as a suite of 
   microservices, in golang and python. We use golang for managing data and python for inference. The services talk 
   to each other using Google Cloud PubSub. Additionaly there's a React Dashboard for visualizing medical images,
   requesting diagnosis and viewing reports. <br/>
-  Authentication: Firebase Auth. DB: Google cloud firestore.<br/>
   We were able to reduce turnaround time for a new disease prediction service deployment by 10x, along
   with improved audit record keeping of all predicted reports.
 
@@ -85,6 +87,10 @@ Agile Software Development, Problem Solving, System Design, Technical Content De
   KIIT University, 06/2017 - 06/2021 • CGPA: 9.44 • SGPA 8th Semester: 9.69
 
 ## Side Projects
+- [generational-lru](https://github.com/arindas/generational-lru): A generational arena based LRU Cache implementation
+  in 100% safe rust. All allocations are based off a vector.
+
+
 - [sangfroid](https://github.com/arindas/sangfroid): A load-balanced thread pool implemented in Rust using only the 
   standard library. Worker threads are managed with binary heap and are prioritized by the number of pending jobs.
 
@@ -100,3 +106,10 @@ Agile Software Development, Problem Solving, System Design, Technical Content De
 - [riakv](https://github.com/arindas/riakv): An append-only key-value store, with checksum based record validation.
   Originally inspired by the Rust In Action Book by Tim McNamara with enhancements for reading from in-memory buffers,
   serializing and storing the index to disk, further application of DRY principles and comprehensive tests.
+
+
+- [elevate](https://github.com/arindas/elevate): Barebones zero dependency HTTP File upload server.
+
+
+- [bheap](https://github.com/arindas/bheap): A generic binary max heap implementation which allows dynamic definition
+  of the comparison function for the underlying domain at runtime.
