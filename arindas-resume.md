@@ -7,7 +7,7 @@ css: |-
   .markdown-body pre > code { white-space: pre-wrap; }
 pdf_options:
   format: a4
-  margin: 20mm 20mm 
+  margin: 15mm 15mm 
 ---
 
 # Arindam Das
@@ -108,8 +108,8 @@ Agile Software Development, Problem Solving, System Design, Technical Content De
   serializing and storing the index to disk, further application of DRY principles and comprehensive tests.
 
 
-- [elevate](https://github.com/arindas/elevate): Barebones zero dependency HTTP File upload server.
+- [elevate](https://github.com/arindas/elevate): Barebones zero dependency HTTP File upload server in Go.
 
 
-- [bheap](https://github.com/arindas/bheap): A generic binary max heap implementation which allows dynamic definition
-  of the comparison function for the underlying domain at runtime.
+- [bheap](https://github.com/arindas/bheap): A Rust generic binary max heap implementation. It allows dynamic 
+  definition of the comparison function for the underlying domain at runtime.
