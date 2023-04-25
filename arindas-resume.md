@@ -31,62 +31,64 @@ experience in medical imaging, real-time document processing and business invent
 Agile Software Development, Problem Solving, System Design, Technical Content Delivery
 
 ## Experience
-- <h3>MLOps Engineer, Medical Imaging AI Services, Claritas Healthtech (06/2020 - Present)</h3>
-  
-  <h4>Responsibilities</h4>
-  - Provisioning infrastructure for researchers to train and experiment with deep learning models
-  - Developing distributed deep learning inference services and corresponding client web applications 
-  - Deploying and maintaining said applications on the Google Cloud Platform
-  
-  <h4>Projects</h4>
-  - File storage solution built on top of Google Cloud Storage with additional support for bucket creation and user 
-  access authorization at the level of buckets. Implemented as a golang web service with the golang google-cloud-sdk,
-  along with a frontend React client application.<br/>
+<h3>MLOps Engineer, Medical Imaging AI Services, Claritas Healthtech (06/2020 - Present)</h3>
 
-  This solution enabled us to receive sensitive data from different medical institutions without providing access to our GCP infrastructure. 
-  
+<h4>Responsibilities</h4>
+- Provisioning infrastructure for researchers to train and experiment with deep learning models
+- Developing distributed deep learning inference services and corresponding client web applications
+- Deploying and maintaining said applications on the Google Cloud Platform
 
-  - Distributed deep-learning based diagnosis on medical images for a variety of diseases. Implemented as an event-driven suite of 
-  microservices, in golang and python. We use golang for the web serving infrastructure and python for inference. The services talk 
-  to each other using Google Cloud PubSub. Additionaly there's a React Dashboard for visualizing medical images,
-  requesting diagnosis and viewing reports. <br/>
+<h4>Projects</h4>
 
-  We were able to reduce turnaround time for a new disease prediction service deployment by 10x, along
-  with improved audit record keeping of all predicted reports.
+<h5>Propreitary file storage solution build on top of GCS</h5>
+File storage solution built on top of Google Cloud Storage with additional support for bucket creation and user 
+access authorization at the level of buckets. Implemented as a golang web service with the golang google-cloud-sdk,
+along with a frontend React client application.<br/>
+
+This solution enabled us to receive sensitive data from different medical institutions without providing access to our GCP infrastructure. 
+
+<h5>Distributed deep learning inference</h5>
+Distributed deep-learning based diagnosis on medical images for a variety of diseases. Implemented as an event-driven suite of 
+microservices, in golang and python. We use golang for the web serving infrastructure and python for inference. The services talk 
+to each other using Google Cloud PubSub. Additionaly there's a React Dashboard for visualizing medical images,
+requesting diagnosis and viewing reports. <br/>
+
+We were able to reduce turnaround time for a new disease prediction service deployment by 10x, along
+with improved audit record keeping of all predicted reports.
 
 <br/>
 
-- <h3>Solution Architect, DeepWrex Technologies (04/2018 - 06/2020)</h3>
-  
-  <b>Responsibilities</b>
-  - Architect cloud based solutions for machine learning software services.
-  - Assist researchers in implementing deep learning research papers.
-  - Iterating from research PoC to production.
-  
-  <b>Projects</b>
-  - A real-time named entity recognition system for medical reports. This was an in house, economic alternative to
-  AWS Medical Comprehend, which didn't exist at the time. This was implemented as a suite of C++ microservices, with
-  intermediate data storage on AWS S3. These services talked to each other with Kafka (using rdkafka)
-  - A scalable black and white image colourization system, deployed using "Pytorch Serve" and FastAPI on AWS. We 
-  implemented the instance aware image colourization paper.
+<h3>Solution Architect, DeepWrex Technologies (04/2018 - 06/2020)</h3>
 
-- <h3>Satellite Onboard Computer RTOS Research Student, KIITSAT (04/2018 - 05/2019)</h3>
-  
-  - Developed a shell capable of spawning programs and organizing pipes
-  - Developed a minimal kernel for armv6 (on Raspberry Pi 3) with basic memory management and TTL based I/O Support
-  - Trained fellow team members on OS concepts
+<b>Responsibilities</b>
+- Architect cloud based solutions for machine learning software services.
+- Assist researchers in implementing deep learning research papers.
+- Iterating from research PoC to production.
+
+<b>Projects</b>
+- A real-time named entity recognition system for medical reports. This was an in house, economic alternative to
+AWS Medical Comprehend, which didn't exist at the time. This was implemented as a suite of C++ microservices, with
+intermediate data storage on AWS S3. These services talked to each other with Kafka (using rdkafka)
+- A scalable black and white image colourization system, deployed using "Pytorch Serve" and FastAPI on AWS. We 
+implemented the instance aware image colourization paper.
+
+<h3>Satellite Onboard Computer RTOS Research Student, KIITSAT (04/2018 - 05/2019)</h3>
+
+- Developed a shell capable of spawning programs and organizing pipes
+- Developed a minimal kernel for armv6 (on Raspberry Pi 3) with basic memory management and TTL based I/O Support
+- Trained fellow team members on OS concepts
 
 <!--
-- <h3>VR 3d Game Development Instructor, CampK12 (03/2020 - 06/2020)</h3>
-  
-  <b>Responsibilities</b>
-  - Teaching K12 students about game development which entailed:
-    - Problem solving skills
-    - Basic Programming using Javascript
-    - Trigonometry
-    - _Patience and Perseverance_
-  
-  Some projects that I taught to students can be found at https://github.com/arindas-campk12
+<h3>VR 3d Game Development Instructor, CampK12 (03/2020 - 06/2020)</h3>
+
+<b>Responsibilities</b>
+- Teaching K12 students about game development which entailed:
+  - Problem solving skills
+  - Basic Programming using Javascript
+  - Trigonometry
+  - _Patience and Perseverance_
+
+Some projects that I taught to students can be found at https://github.com/arindas-campk12
 -->
 
 ## Education
