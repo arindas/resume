@@ -20,20 +20,21 @@ Generalist capable of architecting and implementing cloud-native software servic
 experience in medical imaging, real-time document processing and business inventory management.
 
 ## Technical Skills
-- __Languages__: C, C++, Java, Python, Golang, Rust, Javascript, SQL
-- __Frameworks and Libraries__: Django, Tensorflow, Pytorch, React
+- __Languages__: C, C++, Java, Python, Golang, Rust, Javascript, Typescript, SQL
+- __Frameworks and Libraries__: Django, Tensorflow, Pytorch, React, Glommio
 - __Tools__: Git, Vim, Neovim, Awk, Sed
 - __DevOps__: Linux, Docker, Bash, Zsh, Github Actions, Gitlab CI, Terraform
-- __Databases__: Postgres, GCP Cloud Firestore, SQLite
+- __Databases__: PostgreSQL, GCP Cloud Firestore, SQLite
 - __Cloud__: AWS{S3, EC2, Lightsail}, Firebase, GCP{Instances, PubSub, Cloud Storage}, Azure{Instances}
 
 ## Soft Skills
 Agile Software Development, Problem Solving, System Design, Technical Content Delivery
 
 ## Experience
-- <h3>Full Stack Engineer, Medical Imaging AI Services, Claritas Healthtech Pte. Ltd. (06/2020 - Present)</h3>
+- <h3>MLOps Engineer, Medical Imaging AI Services, Claritas Healthtech (06/2020 - Present)</h3>
   
   <b>Responsibilities</b>
+  - Provisioning infrastructure for training and experimenting with deep learning models for researchers
   - Developing distributed deep learning inference services and corresponding client web applications 
   - Deploying and maintaining said applications on the Google Cloud Platform
   
@@ -42,8 +43,8 @@ Agile Software Development, Problem Solving, System Design, Technical Content De
   access authorization at the level of buckets. Implemented as a golang web service with the golang google-cloud-sdk,
   along with a frontend React client application.<br/>
   This solution enabled us to receive sensitive data from different medical institutions without providing access to our GCP infrastructure. 
-  - Distributed deep-learning based diagnosis on medical images for a variety of diseases. Implemented as a suite of 
-  microservices, in golang and python. We use golang for managing data and python for inference. The services talk 
+  - Distributed deep-learning based diagnosis on medical images for a variety of diseases. Implemented as an event-driven suite of 
+  microservices, in golang and python. We use golang for the web serving infrastructure and python for inference. The services talk 
   to each other using Google Cloud PubSub. Additionaly there's a React Dashboard for visualizing medical images,
   requesting diagnosis and viewing reports. <br/>
   We were able to reduce turnaround time for a new disease prediction service deployment by 10x, along
@@ -83,11 +84,16 @@ Agile Software Development, Problem Solving, System Design, Technical Content De
   
   Some projects that I taught to students can be found at https://github.com/arindas-campk12
 -->
+
 ## Education
 - <h3>B.Tech in Computer Science and Engineering</h3> 
   KIIT University, 06/2017 - 06/2021 • CGPA: 9.44 • SGPA 8th Semester: 9.69
 
 ## Side Projects
+- [laminarmq](https://github.com/arindas/laminarmq): A scalable, distributed message queue powered by a segmented, partitioned, 
+replicated and immutable log. It is a resource efficient alternative to Apache Kafka.
+
+
 - [generational-lru](https://github.com/arindas/generational-lru): A generational arena based LRU Cache implementation
   in 100% safe rust. All allocations are based off a vector.
 
