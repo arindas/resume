@@ -33,13 +33,13 @@ Agile Software Development, Problem Solving, System Design, Technical Content De
 ## Experience
 <h3>MLOps Engineer, Medical Imaging AI Services, Claritas Healthtech (06/2020 - Present)</h3>
 
-<h4>Responsibilities</h4>
+<b>Responsibilities<b>
 
-1. Provisioning infrastructure for researchers to train and experiment with deep learning models
-2. Developing distributed deep learning inference services and corresponding client web applications
-3. Deploying and maintaining said applications on the Google Cloud Platform
+- Provisioning infrastructure for researchers to train and experiment with deep learning models
+- Developing distributed deep learning inference services and corresponding client web applications
+- Deploying and maintaining said applications on the Google Cloud Platform
 
-<h4>Projects</h4>
+<b>Projects<b>
 
 <h5>Propreitary file storage solution build on top of GCS</h5>
 File storage solution built on top of Google Cloud Storage with additional support for bucket creation and user 
