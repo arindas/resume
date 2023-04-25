@@ -33,22 +33,22 @@ Agile Software Development, Problem Solving, System Design, Technical Content De
 ## Experience
 <h3>MLOps Engineer, Medical Imaging AI Services, Claritas Healthtech (06/2020 - Present)</h3>
 
-<b>Responsibilities<b>
-
+<b>Responsibilities</b>
 - Provisioning infrastructure for researchers to train and experiment with deep learning models
 - Developing distributed deep learning inference services and corresponding client web applications
 - Deploying and maintaining said applications on the Google Cloud Platform
 
-<b>Projects<b>
+<b>Projects</b>
 
-<h5>Propreitary file storage solution build on top of GCS</h5>
+<u>Propreitary file storage solution build on top of GCS</u>
 File storage solution built on top of Google Cloud Storage with additional support for bucket creation and user 
 access authorization at the level of buckets. Implemented as a golang web service with the golang google-cloud-sdk,
 along with a frontend React client application.
 
-This solution enabled us to receive sensitive data from different medical institutions without providing access to our GCP infrastructure. 
+This solution enabled us to receive sensitive data from different medical institutions without 
+providing access to our GCP infrastructure. 
 
-<h5>Distributed deep learning inference</h5>
+<u>Distributed deep learning inference</u>
 Distributed deep-learning based diagnosis on medical images for a variety of diseases. Implemented as an event-driven suite of 
 microservices, in golang and python. We use golang for the web serving infrastructure and python for inference. The services talk 
 to each other using Google Cloud PubSub. Additionaly there's a React Dashboard for visualizing medical images,
