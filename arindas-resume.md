@@ -40,22 +40,18 @@ Agile Software Development, Problem Solving, System Design, Technical Content De
 
 <b>Projects</b>
 
-<u>Propreitary file storage solution build on top of GCS</u>
-File storage solution built on top of Google Cloud Storage with additional support for bucket creation and user 
+- Cloud based file storage solution built on top of Google Cloud Storage with additional support for bucket creation and user 
 access authorization at the level of buckets. Implemented as a golang web service with the golang google-cloud-sdk,
 along with a frontend React client application.
+_This solution enabled us to receive sensitive data from different medical institutions without 
+providing access to our GCP infrastructure._
 
-This solution enabled us to receive sensitive data from different medical institutions without 
-providing access to our GCP infrastructure. 
-
-<u>Distributed deep learning inference</u>
-Distributed deep-learning based diagnosis on medical images for a variety of diseases. Implemented as an event-driven suite of 
+- Distributed deep-learning based diagnosis on medical images for a variety of diseases. Implemented as an event-driven suite of 
 microservices, in golang and python. We use golang for the web serving infrastructure and python for inference. The services talk 
 to each other using Google Cloud PubSub. Additionaly there's a React Dashboard for visualizing medical images,
 requesting diagnosis and viewing reports.
-
-We were able to reduce turnaround time for a new disease prediction service deployment by 10x, along
-with improved audit record keeping of all predicted reports.
+_We were able to reduce turnaround time for a new disease prediction service deployment by 10x, along
+with improved audit record keeping of all predicted reports._
 
 <br/>
 
