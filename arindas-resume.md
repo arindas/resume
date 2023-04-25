@@ -33,20 +33,24 @@ Agile Software Development, Problem Solving, System Design, Technical Content De
 ## Experience
 - <h3>MLOps Engineer, Medical Imaging AI Services, Claritas Healthtech (06/2020 - Present)</h3>
   
-  <b>Responsibilities</b>
-  - Provisioning infrastructure for training and experimenting with deep learning models for researchers
+  <h4>Responsibilities</h4>
+  - Provisioning infrastructure for researchers to train and experiment with deep learning models
   - Developing distributed deep learning inference services and corresponding client web applications 
   - Deploying and maintaining said applications on the Google Cloud Platform
   
-  <b>Projects</b>
+  <h4>Projects</h4>
   - File storage solution built on top of Google Cloud Storage with additional support for bucket creation and user 
   access authorization at the level of buckets. Implemented as a golang web service with the golang google-cloud-sdk,
   along with a frontend React client application.<br/>
+
   This solution enabled us to receive sensitive data from different medical institutions without providing access to our GCP infrastructure. 
+  
+
   - Distributed deep-learning based diagnosis on medical images for a variety of diseases. Implemented as an event-driven suite of 
   microservices, in golang and python. We use golang for the web serving infrastructure and python for inference. The services talk 
   to each other using Google Cloud PubSub. Additionaly there's a React Dashboard for visualizing medical images,
   requesting diagnosis and viewing reports. <br/>
+
   We were able to reduce turnaround time for a new disease prediction service deployment by 10x, along
   with improved audit record keeping of all predicted reports.
 
@@ -89,7 +93,7 @@ Agile Software Development, Problem Solving, System Design, Technical Content De
 - <h3>B.Tech in Computer Science and Engineering</h3> 
   KIIT University, 06/2017 - 06/2021 • CGPA: 9.44 • SGPA 8th Semester: 9.69
 
-## Side Projects
+## Open Source Projects
 - [laminarmq](https://github.com/arindas/laminarmq): A scalable, distributed message queue powered by a segmented, partitioned, 
 replicated and immutable log. It is a resource efficient alternative to Apache Kafka.
 
@@ -111,8 +115,7 @@ replicated and immutable log. It is a resource efficient alternative to Apache K
 
 
 - [riakv](https://github.com/arindas/riakv): An append-only key-value store, with checksum based record validation.
-  Originally inspired by the Rust In Action Book by Tim McNamara with enhancements for reading from in-memory buffers,
-  serializing and storing the index to disk, further application of DRY principles and comprehensive tests.
+  It support both in-memory usage and persisting records to the disk.
 
 
 - [elevate](https://github.com/arindas/elevate): Barebones zero dependency HTTP File upload server in Go.
