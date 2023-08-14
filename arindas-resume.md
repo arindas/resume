@@ -18,18 +18,18 @@ pdf_options:
 (+91) 98316 57983 • dasarindam.mails@gmail.com • Baidyabati, India • [github.com/arindas](https://github.com/arindas)
 
 ## Description
-Specializes in distributed systems, deep learning inference and AI SaaS at scale.
+I specialize in distributed systems, deep learning inference and AI SaaS at scale.
 
-Generalist capable of architecting and implementing cloud-native software services, for any domain. I primarily have 
-experience in medical imaging, real-time document processing and business inventory management.
+My expertise enables me to architect and implement cloud-native software services, for different domains. I primarily have
+experience in medical imaging and diagnosis, real-time document processing and business inventory management.
 
 ## Technical Skills
 - __Languages__: C, C++, Java, Python, Golang, Rust, Javascript, Typescript, SQL
 - __Frameworks and Libraries__: Django, Tensorflow, Pytorch, React, Glommio
 - __Tools__: Git, Vim, Neovim, Awk, Sed
-- __DevOps__: Linux, Docker, Bash, Zsh, Github Actions, Gitlab CI, Terraform
+- __DevOps__: Linux, Nginx, Docker, Bash, Zsh, Github Actions, Gitlab CI, Terraform
 - __Databases__: PostgreSQL, GCP Cloud Firestore, SQLite
-- __Cloud__: AWS{S3, EC2, Lightsail}, Firebase, GCP{Instances, PubSub, Cloud Storage}, Azure{Instances}
+- __Cloud__: AWS{S3, EC2, Lightsail}, Firebase, GCP{Instances, PubSub, Cloud Storage}, Azure{Instances, Blob Storage, Container Apps}
 
 ## Soft Skills
 Agile Software Development, Requirement Analysis, System Design, Technical Content Delivery
@@ -74,8 +74,6 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
   dedicated Torchserve server based on requirements.
   - I was responsible for productionizing over 15 different deep-learning
   models split across 6 different web services in a span of 2 years.
-
-<div class="page-break"></div>
 
 <h3>Solution Architect, DeepWrex Technologies (04/2018 - 06/2020)</h3>
 
@@ -130,7 +128,7 @@ Some projects that I taught to students can be found at https://github.com/arind
 
 ## Education
 - <h3>B.Tech in Computer Science and Engineering</h3> 
-  KIIT University, 06/2017 - 06/2021 • CGPA: 9.44 • SGPA 8th Semester: 9.69
+  KIIT University, 06/2017 - 06/2021 • CGPA: 9.44/10 • SGPA 8th Semester: 9.69/10
 
 ## Open Source Projects
 - [laminarmq](https://github.com/arindas/laminarmq): A scalable, distributed message queue powered by a segmented, partitioned, 
