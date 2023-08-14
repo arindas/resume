@@ -122,7 +122,7 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
   - Basic Programming using Javascript (Control flow, operators, functions, callbacks etc.)
   - Elementary Trigonometry for animating movements of game objects
 
-I guided 10 different students through 8 game-dev projects over a period of 3
+I guided 5 different students through 8 game-dev projects over a period of 3
 months. At the end of the course the students were able to independently
 implement features and explore new concepts.
 
