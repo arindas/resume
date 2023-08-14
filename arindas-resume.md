@@ -11,7 +11,7 @@ css: |-
   .markdown-body pre > code { white-space: pre-wrap; }
 pdf_options:
   format: a4
-  margin: 10mm 15mm 
+  margin: 15mm 15mm
 ---
 
 # Arindam Das
@@ -121,7 +121,6 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
 - Teaching K12 students about game development which entailed:
   - Basic Programming using Javascript (Control flow, operators, functions, callbacks etc.)
   - Elementary Trigonometry for animating movements
-  - Top down problem decomposition to tackle projects
 
 I guided 10 different students through 8 game-dev projects over a period of 3
 months. At the end of the course the students were able to independently
