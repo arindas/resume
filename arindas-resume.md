@@ -102,6 +102,8 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
     [paper](https://arxiv.org/abs/2005.10825) which was the state-of-the-art
     deep learning based image colourization paper at the time.
 
+<div class="page-break"></div>
+
 <h3>Satellite Onboard Computer RTOS Research Student, KIITSAT (04/2018 - 05/2019)</h3>
 
 - Designed a shell capable of spawning programs and organizing pipes within 200
@@ -112,8 +114,6 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
   details.
 - Collaborated with 2 different student engineering departments for integrating
   with different Satellite subsystems
-
-<div class="page-break"></div>
 
 <h3>VR 3d Game Development Instructor Intern, CampK12 (03/2020 - 06/2020)</h3>
 
