@@ -93,14 +93,14 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
     accessible to patients.
 
 - <b>Black and white image colourization system</b> 
-  - Used Torchserve inference server for scalable GPU inference and FastAPI for
-  user facing web services.
-  - Deployed on AWS on a GPU enabled EC2 instance.
-  - Additionally developed and launched a Flutter Client Application to Google
-    Play Store with over 50 downloads in the first month.
   - We implemented the Instance aware image colourization
     [paper](https://arxiv.org/abs/2005.10825) which was the state-of-the-art
     deep learning based image colourization paper at the time.
+  - Used Torchserve inference server for scalable GPU inference and FastAPI for
+  user facing web services.
+  - Deployed on AWS on a GPU enabled EC2 instance.
+  - We also developed and launched a Flutter Client Application to Google
+    Play Store with over 50 downloads in the first month.
 
 <div class="page-break"></div>
 
