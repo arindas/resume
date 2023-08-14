@@ -7,7 +7,7 @@ headerTemplate: |-
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 css: |-
   .page-break { page-break-after: always; }
-  .markdown-body { font-size: 12px; font-family: Roboto, sans-serif; }
+  .markdown-body { font-size: 13px; font-family: Roboto, sans-serif; }
   .markdown-body pre > code { white-space: pre-wrap; }
 pdf_options:
   format: a4
