@@ -1,9 +1,13 @@
 ---
 stylesheet: https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css
 body_class: markdown-body
+headerTemplate: |-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 css: |-
   .page-break { page-break-after: always; }
-  .markdown-body { font-size: 11px; font-family: sans-serif; }
+  .markdown-body { font-size: 12px; font-family: Roboto, sans-serif; }
   .markdown-body pre > code { white-space: pre-wrap; }
 pdf_options:
   format: a4
@@ -42,31 +46,36 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
 
 - <b>Cloud based file storage solution built using Google Cloud Storage</b> 
   - Supports bucket creation, bucket level user access authorization and
-  create-read-update operations.
-  - Backend is a golang web service built with: 
-    - google-cloud-sdk
-    - Cloud Firestore database
-    - Firebase Authentication
+    create-read-update operations.
+  - Backend is a golang web service built with, google-cloud-sdk, Cloud
+    Firestore database and Firebase Authentication
   - Frontend is a React SPA application
-  - _This solution enabled us to collaborate with sensitive datasets from over
-  10 different medical institutions across UK, Singapore and Europe without
-  providing access to our GCP infrastructure._
+  - _This solution enabled us to collaborate on sensitive datasets with over
+    10 different medical institutions across UK, Singapore and Europe without
+    providing access to our GCP infrastructure._
 
 - <b>Distributed deep-learning based diagnosis on medical images for a variety of diseases</b> 
   - Designed as an event-driven suite of microservices, in golang and python. 
-  - We employ golang for the web serving infrastructure and python for inference. 
+  - We employ golang for the web serving infrastructure and python for
+    inference. 
   - Google Cloud PubSub is used as the messaging layer.
   - Capable of integrating with dedicated inference servers like Torchserve,
-  Nvidia Triton and Tensorflow Serving
-  - We provide a React Dashboard for:
-    - Visualizing medical images 
-    - Requesting AI diagnosis
-    - Tracking inference status
-    - Viewing AI Medical Diagnosis reports
+    Nvidia Triton and Tensorflow Serving
+  - We provide a React Dashboard for: Visualizing medical images, Requesting AI
+    diagnosis, Tracking inference status and Viewing AI Medical Diagnosis
+    reports
   - _Reduced turnaround time for a new disease prediction service deployment by
-  10x, along with improved audit record keeping of all predicted reports._
+    10x, along with improved audit record keeping of all predicted reports._
 
-<br/>
+- <b>Dedicated Inference services for research Proof-of-concepts</b>
+  - Implemented as a Django user facing application and a inference server.
+  - The Django application behaves as a sidecar for the inference server
+  - The inference server is either implemented as a FastAPI service or a
+  dedicated Torchserve server based on requirements.
+  - I was responsible for productionizing over 15 different deep-learning
+  models split across 6 different web services in a span of 2 years.
+
+<div class="page-break"></div>
 
 <h3>Solution Architect, DeepWrex Technologies (04/2018 - 06/2020)</h3>
 
