@@ -11,7 +11,7 @@ css: |-
   .markdown-body pre > code { white-space: pre-wrap; }
 pdf_options:
   format: a4
-  margin: 15mm 10mm 
+  margin: 10mm 15mm 
 ---
 
 # Arindam Das
