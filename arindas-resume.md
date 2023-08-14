@@ -132,7 +132,9 @@ Few selected projects from the ones that I taught to students can be found [here
 
 ## Education
 - <h3>B.Tech in Computer Science and Engineering</h3> 
-  KIIT University, 06/2017 - 06/2021 • CGPA: 9.44/10 • SGPA 8th Semester: 9.69/10
+  <b>KIIT University (06/2017 - 06/2021)</b>
+  <b>CGPA</b>: 9.44 / 10
+  <b>SGPA 8th Semester</b>: 9.69 / 10
 
 ## Open Source Projects
 - [laminarmq](https://github.com/arindas/laminarmq): A scalable, distributed message queue powered by a segmented, partitioned, 
