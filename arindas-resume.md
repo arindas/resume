@@ -3,7 +3,7 @@ stylesheet: https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/gi
 body_class: markdown-body
 css: |-
   .page-break { page-break-after: always; }
-  .markdown-body { font-size: 11px; font-family: monospace; }
+  .markdown-body { font-size: 11px; font-family: sans-serif; }
   .markdown-body pre > code { white-space: pre-wrap; }
 pdf_options:
   format: a4
@@ -28,7 +28,7 @@ experience in medical imaging, real-time document processing and business invent
 - __Cloud__: AWS{S3, EC2, Lightsail}, Firebase, GCP{Instances, PubSub, Cloud Storage}, Azure{Instances}
 
 ## Soft Skills
-Agile Software Development, Problem Solving, System Design, Technical Content Delivery
+Agile Software Development, Requirement Analysis, System Design, Technical Content Delivery
 
 ## Experience
 <h3>MLOps Engineer, Medical Imaging AI Services, Claritas Healthtech (06/2020 - Present)</h3>
@@ -40,18 +40,31 @@ Agile Software Development, Problem Solving, System Design, Technical Content De
 
 <b>Projects</b>
 
-- Cloud based file storage solution built on top of Google Cloud Storage with additional support for bucket creation and user 
-access authorization at the level of buckets. Implemented as a golang web service with the golang google-cloud-sdk,
-along with a frontend React client application.
-_This solution enabled us to receive sensitive data from different medical institutions without 
-providing access to our GCP infrastructure._
+- <b>Cloud based file storage solution built using Google Cloud Storage</b> 
+  - Supports bucket creation, bucket level user access authorization and
+  create-read-update operations.
+  - Backend is a golang web service built with: 
+    - google-cloud-sdk
+    - Cloud Firestore database
+    - Firebase Authentication
+  - Frontend is a React SPA application
+  - _This solution enabled us to collaborate with sensitive datasets from over
+  10 different medical institutions across UK, Singapore and Europe without
+  providing access to our GCP infrastructure._
 
-- Distributed deep-learning based diagnosis on medical images for a variety of diseases. Implemented as an event-driven suite of 
-microservices, in golang and python. We use golang for the web serving infrastructure and python for inference. The services talk 
-to each other using Google Cloud PubSub. Additionaly there's a React Dashboard for visualizing medical images,
-requesting diagnosis and viewing reports.
-_We were able to reduce turnaround time for a new disease prediction service deployment by 10x, along
-with improved audit record keeping of all predicted reports._
+- <b>Distributed deep-learning based diagnosis on medical images for a variety of diseases</b> 
+  - Designed as an event-driven suite of microservices, in golang and python. 
+  - We employ golang for the web serving infrastructure and python for inference. 
+  - Google Cloud PubSub is used as the messaging layer.
+  - Capable of integrating with dedicated inference servers like Torchserve,
+  Nvidia Triton and Tensorflow Serving
+  - We provide a React Dashboard for:
+    - Visualizing medical images 
+    - Requesting AI diagnosis
+    - Tracking inference status
+    - Viewing AI Medical Diagnosis reports
+  - _Reduced turnaround time for a new disease prediction service deployment by
+  10x, along with improved audit record keeping of all predicted reports._
 
 <br/>
 
@@ -63,17 +76,35 @@ with improved audit record keeping of all predicted reports._
 - Iterating from research PoC to production.
 
 <b>Projects</b>
-- A real-time named entity recognition system for medical reports. This was an in house, economic alternative to
-AWS Medical Comprehend, which didn't exist at the time. This was implemented as a suite of C++ microservices, with
-intermediate data storage on AWS S3. These services talked to each other with Kafka (using rdkafka)
-- A scalable black and white image colourization system, deployed using "Pytorch Serve" and FastAPI on AWS. We 
-implemented the instance aware image colourization paper.
+- <b>Real-time named entity recognition system for medical reports.</b> 
+  - In house, economic alternative to AWS Medical Comprehend which didn't exist
+  at the time.
+  - Implemented as a event-driven suite of C++ microservices, with intermediate
+    data storage on AWS S3.
+  - We used Apache Kafka (using rdkafka) as the messaging layer.
+  - This solution enabled our consulting partner to make medical reports more
+    accessible to patients.
+
+- <b>Black and white image colourization system</b> 
+  - Used Torchserve inference server for scalable GPU inference and FastAPI for
+  user facing web services.
+  - Deployed on AWS on a GPU enabled EC2 instance.
+  - Additionally developed and launched a Flutter Client Application to Google
+    Play Store with over 50 downloads in the first month.
+  - We implemented the Instance aware image colourization
+    [paper](https://arxiv.org/abs/2005.10825) which was the state-of-the-art
+    deep learning based image colourization paper at the time.
 
 <h3>Satellite Onboard Computer RTOS Research Student, KIITSAT (04/2018 - 05/2019)</h3>
 
-- Developed a shell capable of spawning programs and organizing pipes
-- Developed a minimal kernel for armv6 (on Raspberry Pi 3) with basic memory management and TTL based I/O Support
-- Trained fellow team members on OS concepts
+- Designed a shell capable of spawning programs and organizing pipes within 200
+  lines of C
+- Developed a minimal kernel for armv6 (on Raspberry Pi 3) with basic memory
+  management and TTL based I/O Support
+- Trained a team of 8 fellow researchers on OS concepts and implementation
+  details.
+- Collaborated with 2 different student engineering departments for integrating
+  with different Satellite subsystems
 
 <!--
 <h3>VR 3d Game Development Instructor, CampK12 (03/2020 - 06/2020)</h3>
