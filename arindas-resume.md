@@ -113,18 +113,22 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
 - Collaborated with 2 different student engineering departments for integrating
   with different Satellite subsystems
 
-<!--
-<h3>VR 3d Game Development Instructor, CampK12 (03/2020 - 06/2020)</h3>
+<div class="page-break"></div>
+
+<h3>VR 3d Game Development Instructor Intern, CampK12 (03/2020 - 06/2020)</h3>
 
 <b>Responsibilities</b>
 - Teaching K12 students about game development which entailed:
-  - Problem solving skills
   - Basic Programming using Javascript
-  - Trigonometry
-  - _Patience and Perseverance_
+    - Control flow, operators, functions, callbacks etc.
+  - Elementary Trigonometry for animating movements
+  - Top down problem decomposition to tackle projects
 
-Some projects that I taught to students can be found at https://github.com/arindas-campk12
--->
+I guided 10 different students through 8 game-dev projects over a period of 3
+months. At the end of the course the students were able to independently
+implement features and explore new concepts.
+
+Few selected projects from the ones that I taught to students can be found [here](https://github.com/arindas-campk12).
 
 ## Education
 - <h3>B.Tech in Computer Science and Engineering</h3> 
