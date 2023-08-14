@@ -120,7 +120,7 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
 <b>Responsibilities</b>
 - Teaching K12 students about game development which entailed:
   - Basic Programming using Javascript (Control flow, operators, functions, callbacks etc.)
-  - Elementary Trigonometry for animating movements
+  - Elementary Trigonometry for animating movements of game objects
 
 I guided 10 different students through 8 game-dev projects over a period of 3
 months. At the end of the course the students were able to independently
