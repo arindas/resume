@@ -11,10 +11,14 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Build Resume
+
+      - name: Export to pdf
+        uses: oven-sh/setup-bun@v2
         run: |
-          npm i -g md-to-pdf
+          bun install -g md-to-pdf
+          bunx puppeteer browsers install chrome
           md-to-pdf ./arindas-resume.md
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -25,6 +29,7 @@ jobs:
           release_name: Release ${{ github.ref }}
           draft: false
           prerelease: false
+
       - name: Upload Release Asset
         id: upload-release-asset
         uses: actions/upload-release-asset@v1
