@@ -52,20 +52,20 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
 
 - <b>Event-driven API Call Gateway for Inference Services</b>
 
-  - Supports reading medical images from different sources (e.g. Object Storage like AWS S3)
-    and processing them with configured Deep Learning Inference services
+  - Supports reading medical images from different "sources" (e.g. AWS S3) processing them with configured
+    Deep Learning Inference services, and sending them to specified "sinks" (e.g. AWS S3)
   - Designed to accomodate archives containing multiple images, composite media like videos,
     dicom multiframe etc. even when the inference service expects single frame images.
   - Designed in an event driven fashion to accomodate multiple pipelines with different stages:
     enqueue, archive extraction / video split, ingestion, inference, response.
-  - Incorporates a custom task scheduler to make infremental progress on tasks in different pipelines,
+  - Incorporates a custom task scheduler to make incremental progress on tasks in different pipelines,
     including retries for failed tasks and moving tasks from one pipeline to another
   - Engineered for concurrency at every level - from concurrent task state transitions
     to splitting and parallelizing work for individual tasks containing composite media.
   - Tunable to limit concurrency based on environment constraints - including limiting concurrent
     API calls to inference service to prevent overload
   - Accomodates sync and async API call mechanisms to Inference Services with detailed
-    auditkeeping for every API call and retries for failed API calls.
+    audit keeping for every API call and retries for failed API calls.
   - Capable of integrating authentication at every API call boundary - from data interchange
     with sources and sinks to API calls to machine learning inference services.
   - _This solution enables rapid integration of our Machine Learning inference services with
@@ -76,7 +76,7 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
   - Supports ingesting images of various formats (DICOM, NIFTI, VIDEO, JPG, PNG)
     with support for compressed ZIP archives.
   - Support anonymizing images before ingestions for privacy
-  - Supports 2D Polygon, Ellipsoid and Rectagular ROI annotations on images
+  - Supports 2D Polygon, Ellipsoid and Rectangular ROI annotations on images
   - Supports specifying labels for each 2D ROI. Different modality (CT, MRI etc.) and
     anatomy (kidney, brain etc.) pairs have different set if allowed labels.
   - Enforces exclusive user access to same image with locking across server-client
@@ -99,7 +99,7 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
 
 - <b>Cloud based file storage solution built using Google Cloud Storage</b>
 
-  - Files are organized by Buckets and Objects, mirroring file organization in Cloud Object Storage flatforms
+  - Files are organized by Buckets and Objects, mirroring file organization in Object Storage platforms
   - Supports bucket creation, bucket level user access authorization and object upload, download and delete operations.
   - Initially built as golang web service with google-cloud-sdk, Cloud Firestore database
     and Firebase Authentication, along with a React SPA Frontend.
