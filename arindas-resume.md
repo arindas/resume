@@ -102,11 +102,11 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
   - Files are organized by Buckets and Objects, mirroring file organization in Cloud Object Storage flatforms
   - Supports bucket creation, bucket level user access authorization and object upload, download and delete operations.
   - Initially built as golang web service with google-cloud-sdk, Cloud Firestore database
-    and Firebase Authentication, along with a React SPA Frontend
+    and Firebase Authentication, along with a React SPA Frontend.
   - Later ported to Django to make Cloud Agnostic. Supports AWS S3 backed file storage
     and multiple databases for maintaining including PostgreSQL,
-    Microsoft SQL Server, MySQL and SQLite
-  - Maintains catalog of accessible Bucket and Objects in the database for efficient queries
+    Microsoft SQL Server, MySQL and SQLite.
+  - Maintains a catalog of accessible buckets and objects in the database for efficient queries.
   - Records all user access requests (object upload, download, bucket object listing) for detailed audit records
   - User access request records are also used for event driven processing. Includes a Framework
     to filter on user access request records and dispatch pre-configured actions (including API calls)
