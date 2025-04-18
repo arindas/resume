@@ -14,8 +14,10 @@ jobs:
       - name: Checkout Respository
         uses: actions/checkout@v4
 
-      - name: Export to pdf
+      - name: Install bun js
         uses: oven-sh/setup-bun@v2
+
+      - name: Export to pdf
         run: |
           bun install -g md-to-pdf
           bunx puppeteer browsers install chrome
