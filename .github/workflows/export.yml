@@ -12,13 +12,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Respository
-        uses: actions/checkout@v2
+        uses: actions/checkout
       - name: Export to pdf
         run: |
           npm i -g md-to-pdf
           md-to-pdf ./arindas-resume.md
       - name: Archive PDF
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact
         with:
           name: arindas-resume
           path: ./arindas-resume.pdf
