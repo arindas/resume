@@ -15,49 +15,116 @@ pdf_options:
 ---
 
 # Arindam Das
+
 (+91) 98316 57983 • dasarindam.mails@gmail.com • Baidyabati, India • [github.com/arindas](https://github.com/arindas)
 
 ## Description
+
 I specialize in distributed systems, deep learning inference and AI SaaS at scale.
 
-My expertise enables me to architect and implement cloud-native software services, for different domains. I primarily have
-experience in medical imaging and diagnosis, real-time document processing and business inventory management.
+My expertise enables me to architect and implement cloud-native software services across multiple domains. I primarily have
+experience in medical imaging and diagnosis, and real-time document processing.
 
 ## Technical Skills
-- __Languages__: C, C++, Java, Python, Golang, Rust, Javascript, Typescript, SQL
-- __Frameworks and Libraries__: Django, Tensorflow, Pytorch, React, Glommio
-- __Tools__: Git, Vim, Neovim, Awk, Sed
-- __DevOps__: Linux, Nginx, Docker, Bash, Zsh, Github Actions, Gitlab CI, Terraform
-- __Databases__: PostgreSQL, GCP Cloud Firestore, SQLite
-- __Cloud__: AWS{S3, EC2, Lightsail}, Firebase, GCP{Instances, PubSub, Cloud Storage}, Azure{Instances, Blob Storage, Container Apps}
+
+- **Languages**: C, C++, Java, Python, Golang, Rust, Javascript, Typescript, SQL
+- **Frameworks and Libraries**: Django, FastAPI, Tensorflow, Pytorch, React, Glommio, Tokio
+- **Tools**: Git, Vim, Neovim, Awk, Sed
+- **DevOps**: Linux, Nginx, Docker, Bash, Zsh, Github Actions, Gitlab CI, Terraform
+- **Databases**: PostgreSQL, Microsoft SQL Server, MySQL, SQLite, GCP Cloud Firestore
+- **Cloud**: AWS{S3, EC2, Lightsail}, Firebase, GCP{Instances, PubSub, Cloud Storage}, Azure{Instances, Blob Storage, Container Apps}
 
 ## Soft Skills
+
 Agile Software Development, Requirement Analysis, System Design, Technical Content Delivery
 
 ## Experience
+
 <h3>MLOps Engineer, Medical Imaging AI Services, Claritas Healthtech (06/2020 - Present)</h3>
 
 <b>Responsibilities</b>
+
 - Provisioning infrastructure for researchers to train and experiment with deep learning models
 - Developing distributed deep learning inference services and corresponding client web applications
 - Deploying and maintaining said applications on the Google Cloud Platform
 
 <b>Projects</b>
 
-- <b>Cloud based file storage solution built using Google Cloud Storage</b> 
-  - Supports bucket creation, bucket level user access authorization and
-    create-read-update operations.
-  - Backend is a golang web service built with, google-cloud-sdk, Cloud
-    Firestore database and Firebase Authentication
-  - Frontend is a React SPA application
+- <b>Event-driven API Call Gateway for Inference Services</b>
+
+  - Supports reading medical images from different sources (e.g. Object Storage like AWS S3)
+    and processing them with configured Deep Learning Inference services
+  - Designed to accomodate archives containing multiple images, composite media like videos,
+    dicom multiframe etc. even when the inference service expects single frame images.
+  - Designed in an event driven fashion to accomodate multiple pipelines with different stages:
+    enqueue, archive extraction / video split, ingestion, inference, response.
+  - Incorporates a custom task scheduler to make infremental progress on tasks in different pipelines,
+    including retries for failed tasks and moving tasks from one pipeline to another
+  - Engineered for concurrency at every level - from concurrent task state transitions
+    to splitting and parallelizing work for individual tasks containing composite media.
+  - Tunable to limit concurrency based on environment constraints - including limiting concurrent
+    API calls to inference service to prevent overload
+  - Accomodates sync and async API call mechanisms to Inference Services with detailed
+    auditkeeping for every API call and retries for failed API calls.
+  - Capable of integrating authentication at every API call boundary - from data interchange
+    with sources and sinks to API calls to machine learning inference services.
+  - This solution enables rapid integration of our Machine Learning inference services with
+    downstream user applications - including our Cloud Storage application.
+
+- <b>Cloud Image annotation solution with AI Image enhancement</b>
+
+  - Supports ingesting images of various formats (DICOM, NIFTI, VIDEO, JPG, PNG)
+    with support for compressed ZIP archives.
+  - Support anonymizing images before ingestions for privacy
+  - Supports 2D Polygon, Ellipsoid and Rectagular ROI annotations on images
+  - Supports specifying labels for each 2D ROI. Different modality (CT, MRI etc.) and
+    anatomy (kidney, brain etc.) pairs have different set if allowed labels.
+  - Enforces exclusive user access to same image with locking across server-client
+    boundaries. This makes it safe in the face of multi-user access to images in
+    the same study.
+  - Stores images in Cloud Object Storage (AWS S3) and maintains image metadata and
+    catalog in the database. Images are organized by Project, Study, Series and Image records.
+    Supports Microsoft SQL server, MySQL, PostgreSQL, SQLite
+  - Includes an event-driven scheduler and API call Gateway to make requests to
+    Enhancer Machine Learning services, with support for retries on failures.
+    (similar in nature to the aforementioned project)
+  - Images are organized in Projects. Each project can configured with an Enhancer.
+    Images uploaded to a project configured with an enhancer are automatically
+    enhanced - which are placed alongside original images.
+  - Support authorization for Data Annotators (usually doctors) at the project level,
+    along with a mechanism of inviting users to a project via e-mail.
+  - _This solution enabled us to get diverse sensitive image datasets annotated by
+    doctors from Singapore and Brazil. These annotations were indispensable for
+    in-house R&D on novel image enhancement and segmentation methods._
+
+- <b>Cloud based file storage solution built using Google Cloud Storage</b>
+
+  - Files are organized by Buckets and Objects, mirroring file organization in Cloud Object Storage flatforms
+  - Supports bucket creation, bucket level user access authorization and object upload, download and delete operations.
+  - Initially built as golang web service with google-cloud-sdk, Cloud Firestore database
+    and Firebase Authentication, along with a React SPA Frontend
+  - Later ported to Django to make Cloud Agnostic. Supports AWS S3 backed file storage
+    and multiple databases for maintaining including PostgreSQL,
+    Microsoft SQL Server, MySQL and SQLite
+  - Maintains catalog of accessible Bucket and Objects in the database for efficient queries
+  - Records all user access requests (object upload, download, bucket object listing) for detailed audit records
+  - User access request records are also used for event driven processing. Includes a Framework
+    to filter on user access request records and dispatch pre-configured actions (including API calls)
   - _This solution enabled us to collaborate on sensitive datasets with over
     10 different medical institutions across UK, Singapore and Europe without
     providing access to our GCP infrastructure._
+  - The user access request filter dispatch action Framework makes it possible to make API
+    calls to our Gateway for files uploaded to a specific bucket and receive processed files
+    in the same bucket. This effectively allows automatic image processing with inference APIs
+    for files uploaded to specific buckets.
+  - _This solution enabled us to rapidly demonstrate our Machine Learning software to
+    3rd party companies without granting access to our infrastructure._
 
-- <b>Distributed deep-learning based diagnosis on medical images for a variety of diseases</b> 
-  - Designed as an event-driven suite of microservices, in golang and python. 
+- <b>Distributed deep-learning based diagnosis on medical images for a variety of diseases</b>
+
+  - Designed as an event-driven suite of microservices, in golang and python.
   - We employ golang for the web serving infrastructure and python for
-    inference. 
+    inference.
   - Google Cloud PubSub is used as the messaging layer.
   - Capable of integrating with dedicated inference servers like Torchserve,
     Nvidia Triton and Tensorflow Serving
@@ -71,38 +138,41 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
   - Implemented as a Django user facing application and a inference server.
   - The Django application behaves as a sidecar for the inference server
   - The inference server is either implemented as a FastAPI service or a
-  dedicated Torchserve server based on requirements.
+    dedicated Torchserve server based on requirements.
   - I was responsible for productionizing over 15 different deep-learning
-  models split across 6 different web services in a span of 2 years.
+    models split across 6 different web services in a span of 2 years.
 
 <h3>Solution Architect, DeepWrex Technologies (04/2018 - 06/2020)</h3>
 
 <b>Responsibilities</b>
+
 - Architect cloud based solutions for machine learning software services.
 - Assist researchers in implementing deep learning research papers.
 - Iterating from research PoC to production.
 
 <b>Projects</b>
-- <b>Real-time named entity recognition system for medical reports.</b> 
+
+- <b>Real-time named entity recognition system for medical reports.</b>
+
   - In house, economic alternative to AWS Medical Comprehend which didn't exist
-  at the time.
+    at the time.
   - Implemented as a event-driven suite of C++ microservices, with intermediate
     data storage on AWS S3.
   - We used Apache Kafka (using rdkafka) as the messaging layer.
   - This solution enabled our consulting partner to make medical reports more
     accessible to patients.
 
-- <b>Black and white image colourization system</b> 
+<div class="page-break"></div>
+
+- <b>Black and white image colourization system</b>
   - We implemented the Instance aware image colourization
     [paper](https://arxiv.org/abs/2005.10825) which was the state-of-the-art
     deep learning based image colourization paper at the time.
   - Used Torchserve inference server for scalable GPU inference and FastAPI for
-  user facing web services.
-  - Deployed on AWS on a GPU enabled EC2 instance.
+    user facing web services.
+  - Deployed on AWS on a GPU enabled EC2 instance. (g4dn.xlarge)
   - We also developed and launched a Flutter Client Application to Google
     Play Store with over 50 downloads in the first month.
-
-<div class="page-break"></div>
 
 <h3>Satellite Onboard Computer RTOS Research Student, KIITSAT (04/2018 - 05/2019)</h3>
 
@@ -115,9 +185,11 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
 - Collaborated with 2 different student engineering departments for integrating
   with different Satellite subsystems
 
+<!--
 <h3>VR 3d Game Development Instructor Intern, CampK12 (03/2020 - 06/2020)</h3>
 
 <b>Responsibilities</b>
+
 - Teaching K12 students about game development which entailed:
   - Basic Programming using Javascript (Control flow, operators, functions, callbacks etc.)
   - Elementary Trigonometry for animating movements of game objects
@@ -125,38 +197,37 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
 I guided 5 different students through 8 game-dev projects over a period of 3
 months. At the end of the course the students were able to independently
 implement features and explore new concepts.
+-->
 
 ## Education
+
 - <h3>B.Tech in Computer Science and Engineering</h3> 
   <b>KIIT University (06/2017 - 06/2021)</b>, <b>CGPA</b>: 9.44 / 10, <b>SGPA 8th Semester</b>: 9.69 / 10
 
 ## Open Source Projects
-- [laminarmq](https://github.com/arindas/laminarmq): A scalable, distributed message queue powered by a segmented, partitioned, 
-replicated and immutable log. It is a resource efficient alternative to Apache Kafka.
 
+- [laminarmq](https://github.com/arindas/laminarmq): A scalable, distributed message queue powered by a segmented, partitioned,
+  replicated and immutable log. It is a resource efficient alternative to Apache Kafka.
 
-- [generational-lru](https://github.com/arindas/generational-lru): A generational arena based LRU Cache implementation
+- [memcached-ebpf-proxy-cache](https://github.com/arindas/memcached-ebpf-proxy-cache): Intercept and serve memcached requests
+  from a key-value cache at the eBPF layer using BPF maps. This is inspired from the NSDI'21 Paper
+  [BMC: Accelerating Memcached using Safe In-kernel Caching and Pre-stack Processing](https://www.usenix.org/system/files/nsdi21-ghigoff.pdf)
+
+- [generational-cache](https://github.com/arindas/generational-cache): A generational arena based LRU Cache implementation
   in 100% safe rust. All allocations are based off a vector.
 
-
-- [sangfroid](https://github.com/arindas/sangfroid): A load-balanced thread pool implemented in Rust using only the 
+- [sangfroid](https://github.com/arindas/sangfroid): A load-balanced thread pool implemented in Rust using only the
   standard library. Worker threads are managed with binary heap and are prioritized by the number of pending jobs.
-
 
 - [quartz](https://github.com/arindas/quartz): A shared memory parallelized ray tracer using OpenMP.
   _Speciality:_ Non recursive. Traditionally ray tracers are tail recursive. Image formats supported: PPM
 
-
 - [mac-on-linux-with-qemu](https://github.com/arindas/mac-on-linux-with-qemu): Runs MacOS on Linux with the QEMU
   KVM Hypervisor with some python utility scripts for downloading the disk images and shell scripts for starting QEMU.
 
-
-- [riakv](https://github.com/arindas/riakv): An append-only key-value store, with checksum based record validation.
-  It support both in-memory usage and persisting records to the disk.
-
+- [riakv](https://github.com/arindas/riakv): Append-only key-value store, with checksum based integrity. Supports in-memory & presistent usage.
 
 - [elevate](https://github.com/arindas/elevate): Barebones zero dependency HTTP File upload server in Go.
 
-
-- [bheap](https://github.com/arindas/bheap): A Rust generic binary max heap implementation. It allows dynamic 
+- [bheap](https://github.com/arindas/bheap): A Rust generic binary max heap implementation. It allows dynamic
   definition of the comparison function for the underlying domain at runtime.
