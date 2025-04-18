@@ -117,8 +117,8 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
     calls to our Gateway for files uploaded to a specific bucket and receive processed files
     in the same bucket. This effectively allows automatic image processing with inference APIs
     for files uploaded to specific buckets.
-  - _This solution enabled us to rapidly demonstrate our Machine Learning software to
-    3rd party companies without granting access to our infrastructure._
+  - _This solution enabled us to rapidly demonstrate our Deep Learning diagnosis solutions to
+    third-party companies without granting access to our infrastructure._
 
 - <b>Distributed deep-learning based diagnosis on medical images for a variety of diseases</b>
 
