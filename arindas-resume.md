@@ -68,8 +68,8 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
     auditkeeping for every API call and retries for failed API calls.
   - Capable of integrating authentication at every API call boundary - from data interchange
     with sources and sinks to API calls to machine learning inference services.
-  - This solution enables rapid integration of our Machine Learning inference services with
-    downstream user applications - including our Cloud Storage application.
+  - _This solution enables rapid integration of our Machine Learning inference services with
+    downstream user applications - including our Cloud Storage application._
 
 - <b>Cloud Image annotation solution with AI Image enhancement</b>
 
