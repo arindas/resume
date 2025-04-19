@@ -46,7 +46,7 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
 
 - Provisioning infrastructure for researchers to train and experiment with deep learning models
 - Developing distributed deep learning inference services and corresponding client web applications
-- Deploying and maintaining said applications on the Google Cloud Platform
+- Deploying and maintaining said applications as Cloud services (Prev: Azure and GCP. Currently on AWS)
 
 <b>Projects</b>
 
@@ -75,7 +75,7 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
 
   - Supports ingesting images of various formats (DICOM, NIFTI, VIDEO, JPG, PNG)
     with support for compressed ZIP archives.
-  - Support anonymizing images before ingestions for privacy
+  - Supports anonymizing images before ingestions for privacy
   - Supports 2D Polygon, Ellipsoid and Rectangular ROI annotations on images
   - Supports specifying labels for each 2D ROI. Different modality (CT, MRI etc.) and
     anatomy (kidney, brain etc.) pairs have different set if allowed labels.
@@ -86,16 +86,16 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
     catalog in the database. Images are organized by Project, Study, Series and Image records.
     Supports Microsoft SQL server, MySQL, PostgreSQL, SQLite
   - Includes an event-driven scheduler and API call Gateway to make requests to
-    Enhancer Machine Learning services, with support for retries on failures.
+    Enhancer Machine Learning inference services, with support for retries on failures.
     (similar in nature to the aforementioned project)
   - Images are organized in Projects. Each project can configured with an Enhancer.
     Images uploaded to a project configured with an enhancer are automatically
-    enhanced - which are placed alongside original images.
-  - Support authorization for Data Annotators (usually doctors) at the project level,
-    along with a mechanism of inviting users to a project via e-mail.
+    enhanced. Enhanced images are placed alongside original images.
+  - Supports authorization for image annotators (usually doctors) at the project level,
+    along with a mechanism for inviting users to a project via e-mail.
   - _This solution enabled us to get diverse sensitive image datasets annotated by
-    doctors from Singapore and Brazil. These annotations were indispensable for
-    in-house R&D on novel image enhancement and segmentation methods._
+    doctors from Singapore, USA and Brazil. These annotations were indispensable for
+    in-house research and development on novel image enhancement and segmentation methods._
 
 - <b>Cloud based file storage solution built using Google Cloud Storage</b>
 
