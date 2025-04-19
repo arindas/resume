@@ -97,7 +97,7 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
     doctors from Singapore, USA and Brazil. These annotations were indispensable for
     in-house research and development on novel image enhancement and segmentation methods._
 
-- <b>Cloud based file storage solution built using Google Cloud Storage</b>
+- <b>Cloud based file storage solution built using Object Storage platforms (GCS, AWS S3)</b>
 
   - Files are organized by Buckets and Objects, mirroring file organization in Object Storage platforms
   - Supports bucket creation, bucket level user access authorization; object upload, download and delete.
