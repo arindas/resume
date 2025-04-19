@@ -80,7 +80,7 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
   - Supports specifying labels for each 2D ROI. Different modality (CT, MRI etc.) and
     anatomy (kidney, brain etc.) pairs have different set if allowed labels.
   - Enforces exclusive user access to same image with locking across server-client
-    boundaries. This makes it safe in the face of multi-user access to images in
+    boundaries. This makes it safe in the face of multi-user concurrent access to images in
     the same study.
   - Stores images in Cloud Object Storage (AWS S3) and maintains image metadata and
     catalog in the database. Images are organized by Project, Study, Series and Image records.
@@ -100,19 +100,18 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
 - <b>Cloud based file storage solution built using Google Cloud Storage</b>
 
   - Files are organized by Buckets and Objects, mirroring file organization in Object Storage platforms
-  - Supports bucket creation, bucket level user access authorization and object upload, download and delete operations.
-  - Initially built as golang web service with google-cloud-sdk, Cloud Firestore database
+  - Supports bucket creation, bucket level user access authorization; object upload, download and delete.
+  - Initially built as a golang web service with google-cloud-sdk, Cloud Firestore database
     and Firebase Authentication, along with a React SPA Frontend.
-  - Later ported to Django to make Cloud Agnostic. Supports AWS S3 backed file storage
-    and multiple databases for maintaining including PostgreSQL,
+  - Later ported to Django to make it Cloud Agnostic. Currently supports AWS S3 backed file storage
+    and multiple databases for maintaining user, bucket and object metadata - including PostgreSQL,
     Microsoft SQL Server, MySQL and SQLite.
-  - Maintains a catalog of accessible buckets and objects in the database for efficient queries.
   - Records all user access requests (object upload, download, bucket object listing) for detailed audit records
   - User access request records are also used for event driven processing. Includes a Framework
     to filter on user access request records and dispatch pre-configured actions (including API calls)
   - _This solution enabled us to collaborate on sensitive datasets with over
     10 different medical institutions across UK, Singapore and Europe without
-    providing access to our GCP infrastructure._
+    providing access to our cloud infrastructure._
   - The user access request filter dispatch action Framework makes it possible to make API
     calls to our Gateway for files uploaded to a specific bucket and receive processed files
     in the same bucket. This effectively allows automatic image processing with inference APIs
