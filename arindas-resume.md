@@ -192,7 +192,7 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
 - Designed a shell capable of spawning programs and organizing pipes within 200
   lines of C
 - Developed a minimal kernel for armv6 (on Raspberry Pi 3) with basic memory
-  management and TTL I/O Support
+  management and TTL I/O.
 - Trained a team of 8 fellow researchers on OS concepts and implementation
   details.
 - Collaborated with 2 different student engineering departments for integrating
