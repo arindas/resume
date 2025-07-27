@@ -25,16 +25,19 @@ I specialize in distributed systems, deep learning inference and AI SaaS at scal
 My expertise enables me to architect and implement cloud-native software services across multiple domains. I primarily have
 experience in medical imaging and diagnosis, and real-time document processing.
 
-## Technical Skills
+## Skill set
+
+### Technical skills
 
 - **Languages**: C, C++, Java, Python, Golang, Rust, Javascript, Typescript, SQL
-- **Frameworks and Libraries**: Django, FastAPI, Tensorflow, Pytorch, React, Glommio, Tokio
+- **Frameworks and Libraries**: Django, FastAPI, Tensorflow, Pytorch, Pynetdicom, React, Glommio, Tokio
 - **Tools**: Git, Vim, Neovim, Awk, Sed
 - **DevOps**: Linux, Nginx, Docker, Bash, Zsh, Github Actions, Gitlab CI, Terraform
 - **Databases**: PostgreSQL, Microsoft SQL Server, MySQL, SQLite, GCP Cloud Firestore
-- **Cloud**: AWS{S3, RDS, EC2, Lightsail}, Firebase, GCP{Instances, PubSub, Cloud Storage}, Azure{Instances, Blob Storage, Container Apps}
+- **Cloud**: AWS{S3, RDS, EC2, Lightsail}, Firebase, GCP{Instances, PubSub, Cloud Storage}, <br>
+  and Azure{Instances, Blob Storage, Container Apps}
 
-## Soft Skills
+### Soft skills
 
 Agile Software Development, Requirement Analysis, System Design, Technical Content Delivery
 
@@ -80,8 +83,8 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
   - We support multiple types of pipelines, ranging from SEQUENTIAL where a batch of images is sequentially
     processed by multiple stages, to CUMULATIVE - where a single stage receives the original input batch
     as well as the outputs of all the stages before it. We also support a FANOUT stage, where we can spawn
-    multiple oneshot tasks to process the same input batch of images in parallel with the different stages
-    in the pipeline.
+    multiple oneshot tasks to process the same input batch of images in parallel, with the different
+    processors in each pipeline stage.
   - _This solution will enable us to integrate our **image enhancement and segmentation services** with
     **third-party image processors** in the same pipeline without requiring complex code integration_.
 
@@ -105,8 +108,7 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
   - Images are organized in Projects. Each project can configured with an Enhancer.
     Images uploaded to a project configured with an enhancer are automatically
     enhanced. Enhanced images are placed alongside original images.
-  - Supports authorization for image annotators (usually doctors) at the project level,
-    along with a mechanism for inviting users to a project via e-mail.
+  - Supports authorization and e-mail user invites for image annotators (i.e. doctors) at the project level.
   - _This solution enabled us to get diverse sensitive image datasets annotated by
     doctors from Singapore, USA and Brazil. These annotations were indispensable for
     in-house research and development on novel image enhancement and segmentation methods._
@@ -152,16 +154,15 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
   - The Django application behaves as a sidecar for the inference server
   - The inference server is either implemented as a FastAPI service or a
     dedicated Torchserve server based on requirements.
-  - I was responsible for productionizing over 15 different deep-learning
-    models split across 6 different web services in a span of 2 years.
+  - _I productionized 15+ deep-learning models split across 6 different web
+    services in a span of 2 years._
 
 <h3>Solution Architect, DeepWrex Technologies (04/2018 - 06/2020)</h3>
 
 <b>Responsibilities</b>
 
 - Architect cloud based solutions for machine learning software services.
-- Assist researchers in implementing deep learning research papers.
-- Iterating from research PoC to production.
+- Assist researchers in implementing deep learning research papers, iterating from research PoC to production.
 
 <b>Projects</b>
 
@@ -208,6 +209,13 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
 I guided 5 different students through 8 game-dev projects over a period of 3
 months. At the end of the course the students were able to independently
 implement features and explore new concepts.
+
+- [riakv](https://github.com/arindas/riakv): Append-only key-value store, with checksum based integrity. Supports in-memory & presistent usage.
+
+- [elevate](https://github.com/arindas/elevate): Barebones zero dependency HTTP File upload server in Go.
+
+- [bheap](https://github.com/arindas/bheap): A Rust generic binary max heap implementation. It allows dynamic
+  definition of the comparison function for the underlying domain at runtime.
 -->
 
 ## Education
@@ -225,7 +233,7 @@ implement features and explore new concepts.
   [BMC: Accelerating Memcached using Safe In-kernel Caching and Pre-stack Processing](https://www.usenix.org/system/files/nsdi21-ghigoff.pdf)
 
 - [generational-cache](https://github.com/arindas/generational-cache): A generational arena based LRU Cache implementation
-  in 100% safe rust. All allocations are based off a vector.
+  in 100% safe rust.
 
 - [sangfroid](https://github.com/arindas/sangfroid): A load-balanced thread pool implemented in Rust using only the
   standard library. Worker threads are managed with binary heap and are prioritized by the number of pending jobs.
@@ -235,10 +243,3 @@ implement features and explore new concepts.
 
 - [mac-on-linux-with-qemu](https://github.com/arindas/mac-on-linux-with-qemu): Runs MacOS on Linux with the QEMU
   KVM Hypervisor with some python utility scripts for downloading the disk images and shell scripts for starting QEMU.
-
-- [riakv](https://github.com/arindas/riakv): Append-only key-value store, with checksum based integrity. Supports in-memory & presistent usage.
-
-- [elevate](https://github.com/arindas/elevate): Barebones zero dependency HTTP File upload server in Go.
-
-- [bheap](https://github.com/arindas/bheap): A Rust generic binary max heap implementation. It allows dynamic
-  definition of the comparison function for the underlying domain at runtime.
