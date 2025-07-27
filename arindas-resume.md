@@ -162,7 +162,8 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
 <b>Responsibilities</b>
 
 - Architect cloud based solutions for machine learning software services.
-- Assist researchers in implementing deep learning research papers, iterating from research PoC to production.
+- Assist researchers in implementing deep learning research papers.
+- Iterating from research PoC to production.
 
 <b>Projects</b>
 
