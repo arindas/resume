@@ -77,9 +77,9 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
   - _This solution enables rapid integration of our Machine Learning inference services with
     downstream user applications - including our Cloud Storage application._
   - In addition to workflows with a single ML API call, we implemented multi-stage processor pipelines
-  - Our Processor integration implementation is network protocol agnostic, allowing us to support HTTP/S
-    as well as DICOM networking for connecting and exchanging images with the processor. It's also
-    possible to support other protocols like GraphQL, gRPC etc. in the future.
+  - Our Processor integration implementation is network protocol agnostic, allowing us to support different
+    processors with different protocols. We support HTTP/S as well as DICOM networking with the possibility
+    to support other protocols like GraphQL and gRPC in the future.
   - We support multiple types of pipelines, ranging from SEQUENTIAL where a batch of images is sequentially
     processed by multiple stages, to CUMULATIVE - where a single stage receives the original input batch
     as well as the outputs of all the stages before it. We also support a FANOUT stage, where we can spawn
