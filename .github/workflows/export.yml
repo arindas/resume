@@ -19,6 +19,7 @@ jobs:
 
       - name: Export to pdf
         run: |
+          sudo apt install fonts-roboto
           bun install -g md-to-pdf
           bunx puppeteer browsers install chrome
           md-to-pdf ./arindas-resume.md
