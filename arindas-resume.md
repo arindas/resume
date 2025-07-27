@@ -32,7 +32,7 @@ experience in medical imaging and diagnosis, and real-time document processing.
 - **Tools**: Git, Vim, Neovim, Awk, Sed
 - **DevOps**: Linux, Nginx, Docker, Bash, Zsh, Github Actions, Gitlab CI, Terraform
 - **Databases**: PostgreSQL, Microsoft SQL Server, MySQL, SQLite, GCP Cloud Firestore
-- **Cloud**: AWS{S3, EC2, Lightsail}, Firebase, GCP{Instances, PubSub, Cloud Storage}, Azure{Instances, Blob Storage, Container Apps}
+- **Cloud**: AWS{S3, RDS, EC2, Lightsail}, Firebase, GCP{Instances, PubSub, Cloud Storage}, Azure{Instances, Blob Storage, Container Apps}
 
 ## Soft Skills
 
@@ -60,6 +60,9 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
     enqueue, archive extraction / video split, ingestion, inference, response.
   - Incorporates a custom task scheduler to make incremental progress on tasks in different pipelines,
     including retries for failed tasks and moving tasks from one pipeline to another
+  - Tasks are internally modelled as state machines. This allows us to limit the number of IN_PROGRESS
+    tasks for rate-limiting traffic to our backend enhancer services. It also allows us to prioritize
+    or set timeouts for tasks based on which state they are in. Each state transition causes a side-effect.
   - Engineered for concurrency at every level - from concurrent task state transitions
     to splitting and parallelizing work for individual tasks containing composite media.
   - Tunable to limit concurrency based on environment constraints - including limiting concurrent
@@ -70,6 +73,17 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
     with sources and sinks to API calls to machine learning inference services.
   - _This solution enables rapid integration of our Machine Learning inference services with
     downstream user applications - including our Cloud Storage application._
+  - In addition to workflows with a single ML API call, we implemented multi-stage processor pipelines
+  - Our Processor integration implementation is network protocol agnostic, allowing us to support HTTP/S
+    as well as DICOM networking for connecting and exchanging images with the processor. It's also
+    possible to support other protocols like GraphQL, gRPC etc. in the future.
+  - We support multiple types of pipelines, ranging from SEQUENTIAL where a batch of images is sequentially
+    processed by multiple stages, to CUMULATIVE - where a single stage receives the original input batch
+    as well as the outputs of all the stages before it. We also support a FANOUT stage, where we can spawn
+    multiple oneshot tasks to process the same input batch of images in parallel with the different stages
+    in the pipeline.
+  - _This solution will enable us to integrate our **image enhancement and segmentation services** with
+    **third-party image processors** in the same pipeline without requiring complex code integration_.
 
 - <b>Cloud Image annotation solution with AI Image enhancement</b>
 
@@ -160,8 +174,6 @@ Agile Software Development, Requirement Analysis, System Design, Technical Conte
   - We used Apache Kafka (using rdkafka) as the messaging layer.
   - This solution enabled our consulting partner to make medical reports more
     accessible to patients.
-
-<div class="page-break"></div>
 
 - <b>Black and white image colourization system</b>
   - We implemented the Instance aware image colourization
